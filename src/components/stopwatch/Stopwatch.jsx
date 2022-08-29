@@ -46,7 +46,7 @@ export default function Stopwatch() {
   function formatTime(s) {
     const pad = (n) => (n < 10 ? `0${n}` : n);
     const hour = Math.floor(s / 3600);
-    const min = Math.floor(s / 60) - hour * 60;
+    const min = Math.floor(s / 60 - hour * 60);
     const sec = Math.floor(s - hour * 3600 - min * 60);
     return `${pad(hour)}:${pad(min)}:${pad(sec)}`;
   }

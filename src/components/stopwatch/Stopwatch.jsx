@@ -91,13 +91,13 @@ export default function Stopwatch() {
             <div className="left">
               <span className="record">[秒數紀錄]</span>
               {count.map((c) => (
-                <div key={c.index}>{formatTime(c)}</div>
+                <div key={c}>{formatTime(c)}</div>
               ))}
             </div>
             <div className="right">
               <span className="record">[累積秒數]</span>
               {total.map((t) => (
-                <div key={t.index}>{formatTime(t)}</div>
+                <div key={t}>{formatTime(t)}</div>
               ))}
             </div>
           </div>
